@@ -5,32 +5,40 @@
 <title>Teaspressa · BFCM 2025 Performance Analysis (DTC)</title>
 <style>
   :root{
-    --ink:#211a17; --paper:#faf6f1; --card:#ffffff; --line:#e8ded3;
-    --green:#3f6b4f; --green-bg:#eef4ee;
-    --red:#a1442f; --red-bg:#faece7;
-    --amber:#96631a; --amber-bg:#fbf1de;
-    --blue:#2f5f8f; --blue-bg:#eaf1f8;
-    --accent:#7a3b2e;
+    --ink:#1b1a18; 
+    --paper:#fbfbfb;
+    --card:#ffffff; 
+    --line:#dbdbdb;
+    --green:#1b1a18; 
+    --green-bg:#dbdbdb;
+    --red:#1b1a18; 
+    --red-bg:#dbdbdb;
+    --amber:#1b1a18; 
+    --amber-bg:#ffffff;
+    --blue:#1b1a18; 
+    --blue-bg:#dbdbdb;
+    --accent:#ffffff;
   }
   *{box-sizing:border-box;}
+
   body{
     margin:0; background:var(--paper); color:var(--ink);
-    font-family:"Iowan Old Style","Georgia",serif;
+    font-family:"Helvetica",Arial,sans-serif; ;
     line-height:1.55;
   }
-  .wrap{max-width:920px; margin:0 auto; padding:48px 28px 90px;}
-  header.hero{
+  .wrap {max-width:920px; margin:0 auto; padding:48px 28px 90px;}
+  header.hero {
     border-bottom:3px solid var(--ink); padding-bottom:22px; margin-bottom:36px;
   }
-  .eyebrow{
+  .eyebrow {
     font-family:"Helvetica Neue",Arial,sans-serif; text-transform:uppercase;
     letter-spacing:.14em; font-size:12px; color:var(--accent); font-weight:700;
   }
-  h1{font-size:34px; margin:8px 0 6px; line-height:1.15;}
-  .meta{font-family:"Helvetica Neue",Arial,sans-serif; font-size:13.5px; color:#6b5f56;}
+  h1 {font-size:34px; margin:8px 0 6px; line-height:1.15;}
+  .meta {font-family:"Helvetica Neue",Arial,sans-serif; font-size:13.5px; color:#1b1a18;}
   .scope{
     margin-top:14px; font-family:"Helvetica Neue",Arial,sans-serif; font-size:13px;
-    background:var(--amber-bg); border:1px solid #e8d6ab; color:#5c4213;
+    background:var(--amber-bg); border:1px solid #1b1a18; color:#1b1a18;
     padding:10px 14px; border-radius:6px; display:inline-block;
   }
   h2{
@@ -72,7 +80,7 @@
   .card.finding{border-left:4px solid var(--green);}
   .card.gap{border-left:4px solid var(--red);}
   .card.revive{border-left:4px solid var(--amber);}
-  .card.clarified{border-left:4px solid var(--blue);}
+
   .card h4{margin:0 0 6px; font-size:16px;}
   .card .so-what{
     font-family:"Helvetica Neue",Arial,sans-serif; font-size:13px; color:#6b5f56;
@@ -124,32 +132,14 @@
     <div class="scope">Scope: DTC channel only, Draft Orders (large corporate/custom buyers) excluded per your note. Core BFCM window = Nov 24&ndash;Dec 1, 2025, compared against the rest of Q4 (Oct 1&ndash;Dec 31) and against BFCM 2024 where the data allows it.</div>
   </header>
 
-  <h2><span class="tag clarified">Clarified</span>Data notes before the analysis</h2>
-  <div class="card clarified">
-    <h4>Draft Orders excluded &mdash; corrects the Q4 top line</h4>
-    <p>Draft Orders was the largest single "channel" in the raw export at $80,022 for Q4, ahead of Online Store's $78,252 &mdash; you confirmed these are large corporate/custom buyers, not core DTC. Excluding them, true online DTC gross for Q4 is <strong>~$96,030</strong>, not the $176,052 blended total.</p>
-    <div class="caveat">Limitation: the day-by-day sales trend, the conversion-rate report, and the discount tables below come from Shopify exports that blend all channels together and don't carry a channel field to filter by. So while the Q4 total above is now clean, the BFCM-window and daily figures elsewhere in this report may still include some Draft Order dollars. Flagging this rather than presenting false precision &mdash; worth pulling a channel-filtered export next time if a fully clean BFCM-week number matters.</div>
-  </div>
-  <div class="card clarified">
-    <h4>Discount ladder was intentional, not leaking</h4>
-    <p>Confirmed structure: <strong>Give &amp; Get</strong> (tiered loyalty referral program, always-on), <strong>Buy More Save More</strong> (GIFTMORE10/20/30, 10&ndash;30% by cart size), and a <strong>flat sale + GWP</strong> layer. CHEERS10 + GIFTMORE ran the week leading into Black Friday to build momentum; the flagship 30%-off <strong>SIPTHEWEEKEND</strong> ("Love &amp; Sip the Weekend") was reserved for the Cyber Weekend itself.</p>
-    <p>By the numbers: SIPTHEWEEKEND is the single largest discount code in Q4 by dollars applied ($2,814.60 across 114 orders, $9,382 in gross sales it touched) and GIFTMORE's three tiers combined drove 58 discounted orders. That's consistent with an escalating, sequenced offer &mdash; not a flat promo running the same depth all week.</p>
-    <div class="caveat">The exports provided don't timestamp discount-code usage, so the original read (discount rate looked heavier outside the BFCM date range than inside it) can't be confirmed or ruled out at the code level with this data &mdash; treating your description of the sequencing as the source of truth here rather than re-asserting the earlier "gap."</div>
-  </div>
-  <div class="card clarified">
-    <h4>Email/SMS revenue: real, but the size is unresolved either way</h4>
-    <p>UTM tracking wasn't implemented well this cycle and is being cleaned up for next year. That cuts both ways: Klaviyo's own attribution window may be too generous (crediting orders to a campaign that weren't really driven by it), while GA and the Shopify referrer report almost certainly <em>undercount</em> email/SMS because the links weren't tagged &mdash; so those sessions fall into "Direct." True email/SMS-driven revenue for BFCM most likely sits somewhere between Klaviyo's ~$1,950 and GA's ~$215, and is probably closer to the Klaviyo number than the GA one, but neither should be treated as exact until tagging is fixed.</p>
-  </div>
 
-  <h2>Executive summary</h2>
+  <h2>Highlights</h2>
   <div class="exec">
     <ul>
-      <li><b>Sales lift was real and it was a conversion story, not just a traffic story.</b> Site conversion rate nearly doubled during BFCM week (2.7% vs. 1.5% for the rest of the quarter), peaking at 4.7% on Black Friday.</li>
-      <li><b>Basket size did the heavy lifting.</b> BFCM revenue was up ~42% year-over-year, but order count was flat (233 vs. 238 in 2024) &mdash; the gain came from AOV climbing to ~$83 from ~$58, largely on bundled mixer-kit sales.</li>
-      <li><b>Cyber Monday (and the day after) outsold Black Friday itself.</b> Dec 1&ndash;2 were the two biggest revenue days of the entire quarter, ahead of Nov 28 &mdash; and that lines up with SIPTHEWEEKEND being the flagship 30%-off Cyber Weekend offer, sequenced after a smaller pre-BF push.</li>
-      <li><b>The discount ladder (Give &amp; Get &rarr; Buy More Save More &rarr; SIPTHEWEEKEND) was a deliberate escalation</b> into the big weekend, not undisciplined discounting &mdash; confirmed this cycle.</li>
-      <li><b>Email/SMS attribution can't be trusted precisely yet</b> &mdash; UTM tracking wasn't solid this cycle and is being rebuilt for next year.</li>
-      <li><b>Automated flows (abandoned cart, browse abandonment, winback) were effectively dark</b> during the highest-intent week of the year.</li>
+      <li> Site conversion rate nearly doubled during BFCM week (2.7% vs. 1.5% for the rest of the quarter), peaking at 4.7% on Black Friday.</li>
+      <li>BFCM revenue was up ~42% year-over-year, but order count was flat (233 vs. 238 in 2024) &mdash; </li>
+      <li>AOV climbed from ~$58 to ~$83, largely on Kit sales.</li>
+      <li> Dec 1&ndash;2 were the two biggest revenue days of the entire quarter. </li>
     </ul>
   </div>
 
@@ -163,9 +153,9 @@
   </div>
 
   <div class="card finding">
-    <h4>Bundled "mixer kit" sets are the AOV engine</h4>
-    <p>Every top-10 product by gross sales during the quarter is a bundled kit (Candy Cane Cookie Latte Cafe Set, Cozy Cabin Coffee Trio, Champagne Bellini Mixer Kit, etc.) rather than a single item. That product mix, combined with the spend-tiered GIFTMORE discount, is the most plausible driver of AOV growth outpacing order growth.</p>
-    <div class="so-what"><b>So what:</b> the AOV win is a merchandising/bundling result as much as a marketing-channel one &mdash; worth protecting and expanding regardless of which channel gets credit for the click.</div>
+    <h4> Luxe Mixer Kits are driving AOV up</h4>
+    <p>Every top-10 product by gross sales during the quarter is a Luxe Mixer kit (Candy Cane Cookie Latte Cafe Set, Cozy Cabin Coffee Trio, Champagne Bellini Mixer Kit, etc.) rather than a single item. That product mix, combined with the spend-tiered GIFTMORE discount, is the most plausible driver of AOV growth outpacing order growth.</p>
+    <div class="so-what"><b>So what:</b> The AOV win is a merchandising/bundling result as much as a marketing-channel. Worth protecting and expanding regardless of which channel gets credit for the click.</div>
   </div>
 
   <div class="card finding">
@@ -180,11 +170,32 @@
     <div class="so-what"><b>So what:</b> BFCM did its job as an acquisition event. The open question is what happens to these ~189 new customers next &mdash; see the flows gap below.</div>
   </div>
 
-  <h2><span class="tag gap">Underperformed / Gaps</span>Automation, tracking, list health</h2>
+  
+  <h2><span class="tag revive">Revive next cycle</span></h2>
+
+  <div class="card revive"><h4>Finish the UTM cleanup before the next sale</h4>
+  <p>Already in motion &mdash; this is the top priority so next year's channel-budget decisions rest on real numbers, not a Klaviyo-vs-GA guessing game.</p></div>
+
+  <div class="card revive"><h4>Rebuild Abandoned Cart + Browse Abandonment for the next big sale</h4>
+  <p>In progess - Rebuilding!</p></div>
+
+  <div class="card revive"><h4>Keep the sequenced discount ladder</h4>
+  <p>Give &amp; Get &rarr; Buy More Save More &rarr; flat 30% flagship weekend offer lined up with the best sales days of the quarter. Worth repeating the sequencing rather than leading with the deepest discount too early in the cycle.</p></div>
+
+  <div class="card revive"><h4>Give Cyber Monday / "final hours" its own hero moment, not a follow-up slot</h4>
+  <p>It outsold Black Friday day-of; the send calendar and paid spend should reflect that going forward.</p></div>
+
+  <div class="card revive"><h4>Keep corporate/custom orders reporting separate</h4>
+  <p>Now that Draft Orders are excluded, worth keeping a habit of pulling DTC-only, channel-filtered exports for future reporting so this cleanup doesn't have to happen after the fact.</p></div>
+
+  <div class="card revive"><h4>Grow the loyalty (Rivo) segment ahead of the next sale</h4>
+  <p>Loyalty-only pre-sale emails converted despite tiny list sizes (12&ndash;680 recipients per tier) &mdash; the offer works, the audience is just small.</p></div>
+
+  <h2><span class="tag gap"> Gaps to Fix</span>Automation, tracking, list health</h2>
 
   <div class="card gap">
     <h4>Lifecycle flows were essentially dormant during the biggest week of the year</h4>
-    <p>Abandoned Cart, Browse Abandonment, and Winback flows show 1&ndash;20 recipients per day (vs. thousands for one-off campaigns) and near-zero placed orders across the entire BFCM window. Several flow messages are flagged "deleted" or "draft" in the export &mdash; you flagged you're not sure why, so this is worth a direct check inside Klaviyo rather than reading too much into the export alone.</p>
+    <p>Abandoned Cart, Browse Abandonment, and Winback flows show 1&ndash;20 recipients per day (vs. thousands for one-off campaigns) and near-zero placed orders across the entire BFCM window. Several flow messages are flagged "deleted" or "draft" in the export &mdash;  </p>
     <div class="so-what"><b>So what:</b> the highest-intent shoppers of the year &mdash; people who added to cart and left &mdash; don't look like they were being systematically recovered. Worth confirming directly in Klaviyo whether these were paused on purpose.</div>
   </div>
 
@@ -200,28 +211,8 @@
     <div class="so-what"><b>So what:</b> the list is small; losing subscribers on non-converting sends compounds against future reach. Worth trimming the lowest-performing sends from the cadence next cycle.</div>
   </div>
 
-  <h2><span class="tag revive">Revive next cycle</span></h2>
-
-  <div class="card revive"><h4>Finish the UTM cleanup before the next sale</h4>
-  <p>Already in motion &mdash; this is the top priority so next year's channel-budget decisions rest on real numbers, not a Klaviyo-vs-GA guessing game.</p></div>
-
-  <div class="card revive"><h4>Confirm and, if needed, rebuild Abandoned Cart + Browse Abandonment for the next big sale</h4>
-  <p>Check directly in Klaviyo whether the "deleted"/"draft" statuses were intentional; if not, get BFCM-specific copy and offer live on these flows before the next major promo window.</p></div>
-
-  <div class="card revive"><h4>Keep the sequenced discount ladder</h4>
-  <p>Give &amp; Get &rarr; Buy More Save More &rarr; flat 30% flagship weekend offer lined up with the best sales days of the quarter. Worth repeating the sequencing rather than leading with the deepest discount too early in the cycle.</p></div>
-
-  <div class="card revive"><h4>Give Cyber Monday / "final hours" its own hero moment, not a follow-up slot</h4>
-  <p>It outsold Black Friday day-of; the send calendar and paid spend should reflect that going forward.</p></div>
-
-  <div class="card revive"><h4>Keep corporate/custom orders reporting separate</h4>
-  <p>Now that Draft Orders are excluded, worth keeping a habit of pulling DTC-only, channel-filtered exports for future reporting so this cleanup doesn't have to happen after the fact.</p></div>
-
-  <div class="card revive"><h4>Grow the loyalty (Rivo) segment ahead of the next sale</h4>
-  <p>Loyalty-only pre-sale emails converted despite tiny list sizes (12&ndash;680 recipients per tier) &mdash; the offer works, the audience is just small.</p></div>
-
   <footer>
-    Built from: Email &amp; SMS 2025 – BFCM Performance.xlsx (Klaviyo campaign + Postscript SMS) and Q4 – BFCM – Reporting.xlsx (Shopify sales/discounts/conversion, Google Analytics, Google Ads, Meta Ads, Postscript). DTC-only, Draft Orders excluded per your confirmation. Some blended-channel Shopify exports (daily sales trend, conversion rate, discount tables) could not be re-filtered to exclude Draft Orders at the line-item level &mdash; noted above where relevant.
+    Built from: Email &amp; SMS 2025 – BFCM Performance.xlsx (Klaviyo campaign + Postscript SMS) and Q4 – BFCM
   </footer>
 
 </div>
